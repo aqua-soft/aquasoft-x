@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const navLinks = [
   { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#how-it-works" },
   { label: "Showcase", href: "#showcase" },
 ];
 
@@ -38,30 +37,6 @@ const features = [
       "Boost your team culture. Celebrate special moments and increase employee satisfaction with engaging activities.",
     image: "/luckydraw/culture.png",
     gradient: "from-accent-purple to-accent-pink",
-  },
-];
-
-const steps = [
-  {
-    number: "01",
-    title: "Create a Draw",
-    description:
-      "Set up a lucky draw in seconds. Add prizes, set the number of winners, and schedule the draw time.",
-    gradient: "from-accent-purple to-accent-cyan",
-  },
-  {
-    number: "02",
-    title: "Team Members Join",
-    description:
-      "Share the draw with your team in Microsoft Teams. Members can join with a single click.",
-    gradient: "from-accent-cyan to-accent-green",
-  },
-  {
-    number: "03",
-    title: "Winners Announced",
-    description:
-      "LuckyDraw Bot automatically picks winners and announces results in your Teams channel. Fair and transparent.",
-    gradient: "from-accent-green to-accent-orange",
   },
 ];
 
@@ -365,69 +340,6 @@ export default function LuckyDrawPage() {
           </div>
         </section>
 
-        {/* How It Works Section */}
-        <section id="how-it-works" className="relative py-32 overflow-hidden">
-          <div className="gradient-blob w-[500px] h-[500px] bg-accent-green/20 top-0 right-0" />
-
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-20"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                How It <span className="gradient-text">Works</span>
-              </h2>
-              <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-                Three simple steps to run a lucky draw in Microsoft Teams.
-              </p>
-            </motion.div>
-
-            <div className="relative">
-              <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent-purple via-accent-cyan to-accent-orange opacity-20 -translate-y-1/2" />
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                {steps.map((step, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6, delay: i * 0.2 }}
-                    className="relative text-center"
-                  >
-                    <div className="relative inline-block mb-8">
-                      <div
-                        className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg`}
-                      >
-                        <span className="text-2xl font-bold text-white">
-                          {step.number}
-                        </span>
-                      </div>
-                      <motion.div
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{
-                          duration: 3,
-                          repeat: Infinity,
-                          delay: i * 0.5,
-                        }}
-                        className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${step.gradient} opacity-20 -z-10`}
-                      />
-                    </div>
-
-                    <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                    <p className="text-text-secondary leading-relaxed">
-                      {step.description}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Showcase Section */}
         <section
           id="showcase"
@@ -588,82 +500,6 @@ export default function LuckyDrawPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="relative border-t border-black/10 pt-20 pb-8">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div>
-              <a
-                href="/"
-                className="text-2xl font-bold gradient-text inline-block mb-4"
-              >
-                AquaSoft
-              </a>
-              <p className="text-text-secondary text-sm leading-relaxed">
-                Intelligent software tools designed for everyone. Simple,
-                powerful, and always evolving.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">LuckyDraw</h4>
-              <ul className="space-y-2">
-                {["Features", "How It Works", "Microsoft Teams Store"].map(
-                  (link, i) => (
-                    <li key={link}>
-                      <a
-                        href={
-                          i < 2
-                            ? `#${link.toLowerCase().replace(/\s+/g, "-")}`
-                            : "https://marketplace.microsoft.com/en-us/product/WA200000091"
-                        }
-                        {...(i === 2
-                          ? { target: "_blank", rel: "noopener noreferrer" }
-                          : {})}
-                        className="text-text-secondary text-sm hover:text-primary transition-colors"
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Legal</h4>
-              <ul className="space-y-2">
-                {["Privacy Policy", "Terms of Service"].map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-text-secondary text-sm hover:text-primary transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-text-secondary text-sm">
-              &copy; {new Date().getFullYear()} AquaSoft. All rights reserved.
-            </p>
-            <p className="text-text-secondary text-sm">
-              Contact:{" "}
-              <a
-                href="mailto:xia_tony@hotmail.com"
-                className="hover:text-primary transition-colors"
-              >
-                xia_tony@hotmail.com
-              </a>
-            </p>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }
