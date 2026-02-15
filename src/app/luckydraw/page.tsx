@@ -12,28 +12,28 @@ const features = [
     description:
       "Thank the teammates who helped you. Award the top performers and recognize contributions across your organization.",
     image: "/luckydraw/award.png",
-    gradient: "from-accent-purple to-accent-cyan",
+    gradient: "from-ld-red to-ld-red-dark",
   },
   {
     title: "Employee Engagement",
     description:
       "Create a work environment that encourages employee engagement. Drive participation with fun, interactive draws.",
     image: "/luckydraw/engagement.png",
-    gradient: "from-accent-orange to-accent-pink",
+    gradient: "from-ld-gold to-ld-red",
   },
   {
     title: "Gamification",
     description:
       "More fun in team collaboration. Add excitement to meetings, events, and everyday work with lucky draws.",
     image: "/luckydraw/gamification.png",
-    gradient: "from-accent-green to-accent-cyan",
+    gradient: "from-ld-red to-ld-gold",
   },
   {
     title: "Team Culture",
     description:
       "Boost your team culture. Celebrate special moments and increase employee satisfaction with engaging activities.",
     image: "/luckydraw/culture.png",
-    gradient: "from-accent-purple to-accent-pink",
+    gradient: "from-ld-red-dark to-ld-red",
   },
 ];
 
@@ -102,7 +102,7 @@ export default function LuckyDrawPage() {
               href="https://marketplace.microsoft.com/en-us/product/WA200000091"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-accent-purple to-accent-cyan text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+              className="bg-ld-red text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-ld-red-dark transition-colors"
             >
               Get It Now
             </a>
@@ -112,7 +112,7 @@ export default function LuckyDrawPage() {
             href="https://marketplace.microsoft.com/en-us/product/WA200000091"
             target="_blank"
             rel="noopener noreferrer"
-            className="md:hidden bg-gradient-to-r from-accent-purple to-accent-cyan text-white px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+            className="md:hidden bg-ld-red text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-ld-red-dark transition-colors"
           >
             Get It Now
           </a>
@@ -129,7 +129,7 @@ export default function LuckyDrawPage() {
               scale: [1, 1.1, 0.9, 1],
             }}
             transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-            className="gradient-blob w-[500px] h-[500px] bg-accent-purple/40 top-1/4 -left-20"
+            className="gradient-blob w-[500px] h-[500px] bg-ld-red/40 top-1/4 -left-20"
           />
           <motion.div
             animate={{
@@ -138,7 +138,7 @@ export default function LuckyDrawPage() {
               scale: [1, 0.9, 1.1, 1],
             }}
             transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-            className="gradient-blob w-[600px] h-[600px] bg-accent-cyan/30 top-1/3 -right-32"
+            className="gradient-blob w-[600px] h-[600px] bg-ld-gold/30 top-1/3 -right-32"
           />
           <motion.div
             animate={{
@@ -146,7 +146,7 @@ export default function LuckyDrawPage() {
               y: [0, -20, 30, 0],
             }}
             transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-            className="gradient-blob w-[400px] h-[400px] bg-accent-pink/20 bottom-1/4 left-1/3"
+            className="gradient-blob w-[400px] h-[400px] bg-ld-red-dark/20 bottom-1/4 left-1/3"
           />
 
           <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -156,16 +156,16 @@ export default function LuckyDrawPage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-accent-orange/10 border border-accent-orange/20"
+                  className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-ld-gold/15 border border-ld-gold/30"
                 >
                   <svg
-                    className="w-5 h-5 text-accent-orange"
+                    className="w-5 h-5 text-ld-gold"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <span className="text-sm font-medium text-accent-orange">
+                  <span className="text-sm font-medium text-ld-red-dark">
                     Microsoft 365 App Award Winner
                   </span>
                 </motion.div>
@@ -176,7 +176,7 @@ export default function LuckyDrawPage() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
                 >
-                  <span className="gradient-text">LuckyDraw</span> Bot for
+                  <span className="ld-gradient-text">LuckyDraw</span> Bot for
                   Microsoft Teams
                 </motion.h1>
 
@@ -201,7 +201,7 @@ export default function LuckyDrawPage() {
                     href="https://marketplace.microsoft.com/en-us/product/WA200000091"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-accent-purple to-accent-cyan text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-all hover:scale-105 duration-200 shadow-lg shadow-accent-purple/25 text-center"
+                    className="bg-ld-red text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-ld-red-dark transition-all hover:scale-105 duration-200 shadow-lg shadow-ld-red/25 text-center"
                   >
                     Add to Teams
                   </a>
@@ -240,7 +240,7 @@ export default function LuckyDrawPage() {
                   className="absolute -bottom-4 -left-4 glass-card p-3 !rounded-2xl"
                 >
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-accent-green to-accent-cyan flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-full bg-ld-red flex items-center justify-center">
                       <svg
                         className="w-4 h-4 text-white"
                         fill="none"
@@ -255,7 +255,7 @@ export default function LuckyDrawPage() {
                         />
                       </svg>
                     </div>
-                    <span className="text-sm font-semibold text-accent-green">
+                    <span className="text-sm font-semibold text-ld-red">
                       Teams Ready
                     </span>
                   </div>
@@ -267,12 +267,12 @@ export default function LuckyDrawPage() {
           <motion.div
             animate={{ y: [-10, 10, -10], rotate: [0, 5, -5, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-20 right-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-orange to-accent-pink opacity-20 hidden lg:block"
+            className="absolute top-20 right-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-ld-red to-ld-red-dark opacity-20 hidden lg:block"
           />
           <motion.div
             animate={{ y: [10, -10, 10], rotate: [0, -5, 5, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute bottom-32 left-10 w-12 h-12 rounded-full bg-gradient-to-br from-accent-cyan to-accent-green opacity-20 hidden lg:block"
+            className="absolute bottom-32 left-10 w-12 h-12 rounded-full bg-gradient-to-br from-ld-gold to-ld-red opacity-20 hidden lg:block"
           />
         </section>
 
@@ -288,7 +288,7 @@ export default function LuckyDrawPage() {
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Engage Your Team,{" "}
-                <span className="gradient-text">Effortlessly</span>
+                <span className="ld-gradient-text">Effortlessly</span>
               </h2>
               <p className="text-text-secondary text-lg max-w-2xl mx-auto">
                 LuckyDraw brings gamification and recognition to Microsoft
@@ -320,7 +320,7 @@ export default function LuckyDrawPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold mb-3 group-hover:text-accent-cyan transition-colors">
+                      <h3 className="text-2xl font-bold mb-3 group-hover:text-ld-red transition-colors">
                         {feature.title}
                       </h3>
                       <p className="text-text-secondary leading-relaxed">
@@ -343,8 +343,8 @@ export default function LuckyDrawPage() {
           ref={showcaseRef}
           className="relative py-32 overflow-hidden"
         >
-          <div className="gradient-blob w-[600px] h-[600px] bg-accent-purple/25 -left-40 top-0" />
-          <div className="gradient-blob w-[400px] h-[400px] bg-accent-cyan/20 right-0 bottom-0" />
+          <div className="gradient-blob w-[600px] h-[600px] bg-ld-red/25 -left-40 top-0" />
+          <div className="gradient-blob w-[400px] h-[400px] bg-ld-gold/20 right-0 bottom-0" />
 
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -356,7 +356,7 @@ export default function LuckyDrawPage() {
               >
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                   Built for{" "}
-                  <span className="gradient-text">Microsoft Teams</span>
+                  <span className="ld-gradient-text">Microsoft Teams</span>
                 </h2>
                 <p className="text-text-secondary text-lg mb-8 leading-relaxed">
                   LuckyDraw integrates seamlessly with Microsoft Teams. No
@@ -378,7 +378,7 @@ export default function LuckyDrawPage() {
                       transition={{ duration: 0.5, delay: 0.1 * i }}
                       className="flex items-center gap-3"
                     >
-                      <div className="w-6 h-6 rounded-full bg-gradient-to-r from-accent-purple to-accent-cyan flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-ld-red flex items-center justify-center flex-shrink-0">
                         <svg
                           className="w-3.5 h-3.5 text-white"
                           fill="none"
@@ -420,13 +420,13 @@ export default function LuckyDrawPage() {
                 >
                   <div className="flex items-center gap-2">
                     <svg
-                      className="w-5 h-5 text-accent-orange"
+                      className="w-5 h-5 text-ld-gold"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-                    <span className="text-sm font-semibold text-accent-orange">
+                    <span className="text-sm font-semibold text-ld-red">
                       Award Winner
                     </span>
                   </div>
@@ -446,8 +446,8 @@ export default function LuckyDrawPage() {
               transition={{ duration: 0.7 }}
               className="relative rounded-[2.5rem] overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-purple via-accent-purple/80 to-accent-cyan" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,210,255,0.3),transparent_60%)]" />
+              <div className="absolute inset-0 bg-gradient-to-br from-ld-red via-ld-red-dark to-ld-red" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,213,79,0.25),transparent_60%)]" />
 
               <motion.div
                 animate={{ rotate: 360 }}
@@ -481,7 +481,7 @@ export default function LuckyDrawPage() {
                     href="https://marketplace.microsoft.com/en-us/product/WA200000091"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-white text-accent-purple px-8 py-4 rounded-full text-lg font-bold hover:bg-white/90 transition-all hover:scale-105 duration-200 shadow-xl"
+                    className="bg-white text-ld-red-dark px-8 py-4 rounded-full text-lg font-bold hover:bg-white/90 transition-all hover:scale-105 duration-200 shadow-xl"
                   >
                     Get It from Teams Store
                   </a>
@@ -497,6 +497,15 @@ export default function LuckyDrawPage() {
           </div>
         </section>
       </main>
+
+      <style jsx global>{`
+        .ld-gradient-text {
+          background: linear-gradient(135deg, var(--color-ld-red), var(--color-ld-red-dark));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      `}</style>
     </>
   );
 }
