@@ -4,10 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Showcase", href: "#showcase" },
-];
+const navLinks: { label: string; href: string }[] = [];
 
 const features = [
   {
