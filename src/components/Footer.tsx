@@ -26,7 +26,7 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 pt-20 pb-8">
+    <footer className="relative border-t border-black/10 pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
           <div className="col-span-2 md:col-span-1">
@@ -53,7 +53,7 @@ export default function Footer() {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-text-secondary text-sm hover:text-white transition-colors"
+                      className="text-text-secondary text-sm hover:text-primary transition-colors"
                     >
                       {link}
                     </a>
@@ -64,7 +64,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-text-secondary text-sm">
             &copy; {new Date().getFullYear()} AquaSoft. All rights reserved.
           </p>
@@ -73,7 +73,7 @@ export default function Footer() {
               <a
                 key={icon.label}
                 href="#"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors"
+                className="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-black/10 transition-colors"
                 aria-label={icon.label}
               >
                 <svg

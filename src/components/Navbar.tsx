@@ -27,7 +27,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-surface/80 backdrop-blur-xl border-b border-white/10"
+          ? "bg-surface/80 backdrop-blur-xl border-b border-black/10 shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -41,7 +41,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-text-secondary hover:text-white transition-colors duration-200 text-sm font-medium"
+              className="text-text-secondary hover:text-primary transition-colors duration-200 text-sm font-medium"
             >
               {link.label}
             </a>
@@ -60,13 +60,13 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <span
-            className={`w-6 h-0.5 bg-white transition-transform duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`}
+            className={`w-6 h-0.5 bg-primary transition-transform duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
-            className={`w-6 h-0.5 bg-white transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`}
+            className={`w-6 h-0.5 bg-primary transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`}
           />
           <span
-            className={`w-6 h-0.5 bg-white transition-transform duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`w-6 h-0.5 bg-primary transition-transform duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
       </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-surface/95 backdrop-blur-xl border-b border-white/10"
+            className="md:hidden bg-surface/95 backdrop-blur-xl border-b border-black/10"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -85,7 +85,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-text-secondary hover:text-white transition-colors text-lg"
+                  className="text-text-secondary hover:text-primary transition-colors text-lg"
                 >
                   {link.label}
                 </a>

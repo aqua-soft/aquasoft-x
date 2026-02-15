@@ -58,7 +58,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="glass-card p-8 hover:bg-white/10 transition-all duration-300"
+              className="glass-card p-8 hover:bg-white/90 transition-all duration-300"
             >
               <div className="flex items-center gap-1 mb-6">
                 {[...Array(5)].map((_, j) => (
@@ -77,7 +77,7 @@ export default function Testimonials() {
               </p>
               <div className="flex items-center gap-3">
                 <div
-                  className={`w-10 h-10 rounded-full bg-gradient-to-r ${t.gradient} flex items-center justify-center text-sm font-bold`}
+                  className={`w-10 h-10 rounded-full bg-gradient-to-r ${t.gradient} flex items-center justify-center text-sm font-bold text-white`}
                 >
                   {t.avatar}
                 </div>

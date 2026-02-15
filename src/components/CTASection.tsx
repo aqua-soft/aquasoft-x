@@ -30,7 +30,7 @@ export default function CTASection() {
           />
 
           <div className="relative px-8 py-20 md:px-16 text-center">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Ready to Get Started?
             </h2>
             <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">

@@ -2,16 +2,16 @@
 
 @theme {
   --color-primary: #1A1A2E;
-  --color-primary-light: #16213E;
+  --color-primary-light: #E8E8F0;
   --color-accent-purple: #4A00E0;
-  --color-accent-cyan: #00D2FF;
+  --color-accent-cyan: #00B4D8;
   --color-accent-orange: #FF6B35;
-  --color-accent-green: #00E676;
+  --color-accent-green: #00C853;
   --color-accent-pink: #FF006E;
-  --color-surface: #0F0F23;
-  --color-surface-light: #1C1C3A;
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #B0B0D0;
+  --color-surface: #F5F5FF;
+  --color-surface-light: #FFFFFF;
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #5A5A7A;
 }
 
 html {
@@ -25,17 +25,18 @@ body {
 
 .gradient-blob {
   filter: blur(80px);
-  opacity: 0.4;
+  opacity: 0.3;
   border-radius: 9999px;
   position: absolute;
   pointer-events: none;
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
 .gradient-text {

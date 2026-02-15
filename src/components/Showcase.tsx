@@ -84,9 +84,9 @@ export default function Showcase() {
                 <div className="w-3 h-3 rounded-full bg-accent-green" />
               </div>
               <div className="space-y-3">
-                <div className="h-4 rounded-full bg-white/10 w-3/4" />
-                <div className="h-4 rounded-full bg-white/10 w-full" />
-                <div className="h-4 rounded-full bg-white/10 w-5/6" />
+                <div className="h-4 rounded-full bg-black/10 w-3/4" />
+                <div className="h-4 rounded-full bg-black/10 w-full" />
+                <div className="h-4 rounded-full bg-black/10 w-5/6" />
               </div>
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <div className="h-24 rounded-2xl bg-gradient-to-br from-accent-purple/30 to-accent-cyan/30 flex items-center justify-center">

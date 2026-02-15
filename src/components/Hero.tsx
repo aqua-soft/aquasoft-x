@@ -38,7 +38,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-block mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-text-secondary text-sm"
+          className="inline-block mb-6 px-4 py-2 rounded-full bg-accent-purple/5 border border-accent-purple/15 text-text-secondary text-sm"
         >
           Powered by AI, Built for Simplicity
         </motion.div>
@@ -77,7 +77,7 @@ export default function Hero() {
           </a>
           <a
             href="#how-it-works"
-            className="glass-card !rounded-full px-8 py-4 text-lg font-semibold hover:bg-white/10 transition-all hover:scale-105 duration-200"
+            className="glass-card !rounded-full px-8 py-4 text-lg font-semibold hover:bg-black/5 transition-all hover:scale-105 duration-200"
           >
             Learn More
           </a>

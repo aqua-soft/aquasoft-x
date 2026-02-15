@@ -150,7 +150,7 @@ export default function Features() {
             <motion.div
               key={i}
               variants={cardVariants}
-              className="glass-card p-8 hover:bg-white/10 transition-all duration-300 group"
+              className="glass-card p-8 hover:bg-white/90 transition-all duration-300 group"
             >
               <div className="mb-5">{feature.icon}</div>
               <h3 className="text-2xl font-bold mb-3 group-hover:text-accent-cyan transition-colors">
